@@ -1479,7 +1479,7 @@
 		
 		if(_container.length > 0) {
 
-			loadScript(plugin_path + 'text-rotator/jquery.simple-text-rotator.min.js', function() {
+			loadScript(plugin_path + 'jquery.simple-text-rotator.min.js', function() {
 
 				_container.each(function() {
 					var _t 			= jQuery(this),
