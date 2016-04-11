@@ -4,14 +4,14 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-		<title>Welcome to SagarAnand.com</title>
+		<title>Sagar Anand</title>
 		<meta name="keywords" content="Sagar Anand" />
 		<meta name="description" content="Sagar Anand Content" />
 		<meta name="Author" content="Sagar Anand" />
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-		<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="../img/favicon.png" type="image/x-icon" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -21,15 +21,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
 
 		<!-- CORE CSS FOR BOOTSTRAP -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		
 		<!-- THEME CSS -->
-		<link href="css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="../css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="../css/layout.css" rel="stylesheet" type="text/css" />
 
 		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="css/lightgrey.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<link href="../css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="../css/lightgrey.css" rel="stylesheet" type="text/css" id="color_scheme" />
 
 		<style type="text/css">
 
@@ -83,6 +83,10 @@
 	        	border-radius: 50%;
 	        }
 
+	        .header-span {
+	        	display: inline-block;
+	        	float: right;
+	        }
 	        
 		</style>
 
@@ -106,7 +110,7 @@
 
 						<!-- Logo -->
 						<a class="logo pull-left" href="index.html">
-							<img src="img/logo-black.png" alt="Mentored-Research Logo" />
+							<img src="../img/logo-black.png" alt="Mentored-Research Logo" />
 						</a>
 
 						<div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
@@ -115,17 +119,22 @@
 								<ul id="topMain" class="nav nav-pills nav-main">
 
 									<li>    
-										<a href="http://sagaranand.com/contact-me">
+										<a href="../">
+											HOME
+										</a>
+									</li>
+									<li>    
+										<a href="../contact-me">
 											CONTACT ME
 										</a>
 									</li>
 									<li>    
-										<a href="http://sagaranand.com/projects">
+										<a href="#">
 											PROJECTS
 										</a>
 									</li>
 									<li>    
-										<a href="http://sagar.com/profile-links">
+										<a href="../profile-links">
 											PROFILE LINKS
 										</a>
 									</li>
@@ -141,7 +150,7 @@
 			<!-- /header div -->
 
 			<!-- Section 2 -->
-			<section class="height-500" id="slider" style="background:url('img/12-min.jpg')">
+			<section class="height-500" id="slider" style="background:url('../img/12-min.jpg')">
 				<div class="overlay dark-6"><!-- dark overlay [0 to 9 opacity] --></div>
 			
 				<div class="display-table">
@@ -170,13 +179,15 @@
 
 
 			<!-- Section 3 -->
-			<section id="multipage" class="alternate">
+			<section id="about" class="alternate">
 				<div class="container">
 
 					<!-- Section Header -->
 					<header class="section-header text-center">
 						<div class="heading-title heading-line-double text-center">
-							<h2>Hi There!</h2>
+							<h2>
+								MY PROJECTS
+							</h2>
 						</div>
 					</header>
 					<!-- /Section Header -->
@@ -184,28 +195,29 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-							<img class="center-block display-pic" src="img/display.png" alt="wedding" width="180" height="180" />
+							<div class="row">
+								<h3 class="page-header">
+									Thesis at BITS-Pilani, Hyderabad Campus
+									<span class="header-span">Dec'14 - May'15</span>
+								</h3>
 
-							<br />
-							<br />
+								<p>
+									<b>COOPERATIVE SPECTRUM SENSING IN COGNITIVE RADIOS USING MACHINE LEARNING TECHNIQUES</b> <br />
+									This thesis aims at programming and configuring a Cognitive Radio to enable its transceiver to use the best wireless channels in its vicinity. Such a radio automatically detects available channels in wireless channels, and then accordingly changes its transmission and reception parameters to allow more concurrent wireless communications in a given spectrum, thus gaining dynamic spectrum management.
+								</p>
+							</div>
 
-							<p>
-								I am <b>Sagar Anand, Computer Science</b> Graduate from <b>Birla Institute of Technology &amp; Science, Pilani (overall CGPA of 7.49 and core CGPA of 7.98)</b>. 
+							<div class="row">
+								<h3 class="page-header">
+									Mentored-Research
+									<span class="header-span">Aug'14 - Dec'15</span>
+								</h3>
 
-								I am currently working at <b>Walmart Global Technologies, Bangalore as an Information Security Developer under the Information Security branch of the E-Commerce division</b>. I am a keen developer and have extensive experience in development on web technologies in particular. I frequently take up side projects to convert them to fully functional units for clients.
-							</p>
-
-							<p>
-								I have a passion for <b>Software Engineering and Development</b>. I like to develop things that simply work, exposing interfaces that work without all the complexity behind the scenes.
-
-								I am particularly working in the field of Information Security and am currently working on a <b>hardware based security solution for storing the sensitive information of an enterprise</b>.
-
-								I have also been working on the tech interface for Mentored-Research, an online assignment-based course provider in the field of finance. This project started back in college and now the site is up and running with over 1000 students enrolled across all the courses of Mentored-Research. Other than that, I have been working on developing APIs, both in <b>Java-Spring-Hibernate platform and NodeJs-MongoDb-AngularJs platform</b>.  
-							</p>
-
-							<p>
-								In my free time, I really like to teach students about the new and cool stuff that exists in the market. I have taken a few sessions in universities like LPU, Jalandhar to give those students a better idea of industry best practices and placement preparations. 
-							</p>
+								<p>
+									<b>CREATION OF WEB BASED FRONTEND AND BACKEND PORTAL FOR MENTORED-RESEARCH</b> <br />
+									This solution implements the web based core functional needs of Mentored-Research for managing the course content and user interactions in an automated way. It is a fully functional portal for enrolling in the courses offered by Mentored-Research. [<a href="http://mentored-research.com" target="_blank" >www.mentored-research.com</a>]
+								</p>
+							</div>
 
 						</div>   <!-- /row -->
 					</div>  <!-- /row -->
@@ -222,7 +234,7 @@
 						
 						<div class="col-md-4">
 							<!-- Footer Logo -->
-							<img class="footer-logo" src="img/logo-white.png" alt="" />
+							<img class="footer-logo" src="../img/logo-white.png" alt="" />
 
 							<!-- Small Description -->
 							<p>If you're in the city, drop in for a quick chat</p>
@@ -248,10 +260,10 @@
 							<h4 class="letter-spacing-1">EXPLORE SAGARANAND.COM</h4>
 							<ul class="footer-links list-unstyled">
 								<li><a href="#">Home</a></li>
-								<li><a href="">About Me</a></li>
-								<li><a href="">Profile Links</a></li>
-								<li><a href="">Projects</a></li>
-								<li><a href="">Contact Me</a></li>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="http://sagaranand.com/profile-links">Profile Links</a></li>
+								<li><a href="http://sagaranand.com/projects">Projects</a></li>
+								<li><a href="http://sagaranand.com/contact-me">Contact Me</a></li>
 							</ul>
 							<!-- /Links -->
 						</div>
@@ -263,30 +275,25 @@
 
 							<!-- Social Icons -->
 							<div class="margin-top-20">
-								<a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+								<a href="http://facebook.com/rockstar.sagar" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
 
 									<i class="icon-facebook"></i>
 									<i class="icon-facebook"></i>
 								</a>
 
-								<a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+								<a href="https://twitter.com/sagaranand015" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
 									<i class="icon-twitter"></i>
 									<i class="icon-twitter"></i>
 								</a>
 
-								<a href="#" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+								<a href="https://plus.google.com/+sagaranand015" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
 									<i class="icon-gplus"></i>
 									<i class="icon-gplus"></i>
 								</a>
 
-								<a href="#" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+								<a href="https://in.linkedin.com/in/sagar-anand-33b37a89" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
 									<i class="icon-linkedin"></i>
 									<i class="icon-linkedin"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-rss pull-left" data-toggle="tooltip" data-placement="top" title="Rss">
-									<i class="icon-rss"></i>
-									<i class="icon-rss"></i>
 								</a>
 					
 							</div>
@@ -317,10 +324,10 @@
 		<!-- /PRELOADER -->
 
 		<!-- JAVASCRIPT FILES -->
-		<script type="text/javascript">var plugin_path = 'js/';</script>
-		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript">var plugin_path = '../js/';</script>
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
 
-		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="../js/scripts.js"></script>
 
 	</body>
 </html>
