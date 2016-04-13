@@ -21,6 +21,9 @@ function SendContactMeQuery($name, $email, $tel, $message) {
 	try {
 		// for the config file
 		$configs = include('config/config.php');
+
+		echo $configs;
+
 		if(!isset($configs)) {   // if configs are not populated
 			$resp = "-1";
 			echo $resp;
@@ -36,6 +39,9 @@ function SendContactMeQuery($name, $email, $tel, $message) {
 		$adminMessage .= "Please take appropriate action. Thank you.";
 
 		$adminRes = SendMessage($configs['adminEmail'], $configs['adminName'], $email, $name, $configs['adminSubject'], $adminMessage);
+
+		echo $adminRes;
+
 		$adminStatus = $adminRes[0]['status'];
 		if($adminStatus == 'sent') {
 			$resp = "1";
@@ -53,6 +59,9 @@ function SendContactMeQuery($name, $email, $tel, $message) {
 		$queryMessage .= "I have received your query and will reply to you in the next 48 hours. :) <br /><br />";
 		$queryMessage .= "Thank you. <br />Sagar Anand, <br />query@sagaranand.com";
 		$queryRes = SendMessage($email, $name, $configs['adminEmail'], $configs['adminName'], $configs['autoQuerySubject'], $queryMessage);
+
+		echo $queryRes;
+
 		$queryStatus = $queryRes[0]['status'];
 		if($queryStatus == 'sent') {
 			$resp = "1";
