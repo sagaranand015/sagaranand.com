@@ -21,9 +21,6 @@ function SendContactMeQuery($name, $email, $tel, $message) {
 	try {
 		// for the config file
 		$configs = include('config/config.php');
-
-		echo $configs;
-
 		if(!isset($configs)) {   // if configs are not populated
 			$resp = "-1";
 			echo $resp;
