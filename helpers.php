@@ -32,8 +32,9 @@ function SendMessage($to, $toName, $from, $fromName, $subject, $message) {
 		return $result;
 	} 
 	catch(Mandrill_Error $e) {
-		$res = "-1";
-		return $res;
+		// $res = "-1";
+		// return $res;
+		return " -> " . $e . " -> " . $e->getMessage();
 	}
 }
 
