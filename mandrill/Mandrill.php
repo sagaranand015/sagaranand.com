@@ -100,7 +100,7 @@ class Mandrill {
         $ch = $this->ch;
 
         curl_setopt ($this->ch, CURLOPT_SSL_VERIFYPEER, TRUE); 
-        curl_setopt ($this->ch, CURLOPT_CAINFO, __DIR__ . "\cacert.pem");
+        curl_setopt ($this->ch, CURLOPT_CAINFO, __DIR__ . "/cacert.pem");
 
         curl_setopt($ch, CURLOPT_URL, $this->root . $url . '.json');
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));

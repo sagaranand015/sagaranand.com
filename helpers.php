@@ -11,7 +11,7 @@ require_once 'mandrill/Mandrill.php';
 // for sending the message through mandrill API.
 function SendMessage($to, $toName, $from, $fromName, $subject, $message) {
 	try {
-		$mandrill = new Mandrill('J99JDcmNNMQLw32QJGDadQ');
+		$mandrill = new Mandrill('41ePKTnx5DEoaYJmC3EEjw');
 		$message = array(
 	        'html' => $message,
 	        'subject' => $subject,
@@ -32,7 +32,7 @@ function SendMessage($to, $toName, $from, $fromName, $subject, $message) {
 		return $result;
 	} 
 	catch(Mandrill_Error $e) {
-		$res = "-1";
+		$res = $e . " --> " . $e->getMessage();
 		return $res;
 	}
 }

@@ -35,8 +35,9 @@ function SendContactMeQuery($name, $email, $tel, $message) {
 		$adminMessage .= "<b>Message/Query: " . $message . "</b><br /><br />";
 		$adminMessage .= "Please take appropriate action. Thank you.";
 
-		$adminRes = SendMessage($configs['adminEmail'], $configs['adminName'], $email, $name, $configs['adminSubject'], $adminMessage);
+		$adminRes = SendMessage($configs['adminEmail'], $configs['adminName'], $configs['adminEmail'], $configs['adminName'], $configs['adminSubject'], $adminMessage);
 		$adminStatus = $adminRes[0]['status'];
+
 		if($adminStatus == 'sent') {
 			$resp = "1";
 			$adminResp = "1";
@@ -54,6 +55,7 @@ function SendContactMeQuery($name, $email, $tel, $message) {
 		$queryMessage .= "Thank you. <br />Sagar Anand, <br />query@sagaranand.com";
 		$queryRes = SendMessage($email, $name, $configs['adminEmail'], $configs['adminName'], $configs['autoQuerySubject'], $queryMessage);
 		$queryStatus = $queryRes[0]['status'];
+
 		if($queryStatus == 'sent') {
 			$resp = "1";
 			$queryResp = "1";
@@ -71,17 +73,5 @@ function SendContactMeQuery($name, $email, $tel, $message) {
 		echo $resp;
 	}
 }
-
-
-// $result = SendMessage($emails[$j], $emails[$j], $from, $from, $subject, $message);
-// $status = $result[0]['status'];
-// if($status == 'sent') {
-// 	$sent++;
-// } else if($status == 'queued' || $status == 'scheduled') {
-// 	$queued++;
-// } else if($status == 'rejected' || $status == 'invalid') {
-// 	$error++;
-// }
-
 
 ?>
